@@ -4,32 +4,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Akshit Sharma | Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
   <style>
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: #0f172a;
-      color: #f8fafc;
+      background: #000;
+      color: #e2e8f0;
       text-align: center;
       padding: 2rem;
     }
+
     header h1 {
       font-size: 3rem;
       margin-bottom: 0.5rem;
-      background: linear-gradient(to right, #a78bfa, #38bdf8);
+      background: linear-gradient(to right, #f1f5f9, #94a3b8);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      animation: pulse 3s infinite;
     }
+
     header p {
       color: #94a3b8;
       margin-bottom: 0.5rem;
     }
+
     .socials {
       margin-top: 1rem;
       display: flex;
@@ -37,92 +39,162 @@
       flex-wrap: wrap;
       gap: 1rem;
     }
+
     .socials a {
       color: #cbd5e1;
       text-decoration: none;
       padding: 0.5rem 1rem;
-      border: 1px solid #334155;
+      border: 1px solid #1e293b;
       border-radius: 999px;
       transition: all 0.3s;
     }
+
     .socials a:hover {
-      background: #475569;
+      background: #1e293b;
     }
+
     section {
       margin-top: 3rem;
       max-width: 800px;
       margin-left: auto;
       margin-right: auto;
     }
+
     h2 {
       font-size: 2rem;
       margin-bottom: 1rem;
-      border-bottom: 2px solid #64748b;
+      border-bottom: 2px solid #475569;
       padding-bottom: 0.5rem;
     }
+
     .project-list {
       display: grid;
       gap: 1.5rem;
     }
+
     .project {
-      background: #1e293b;
+      background: #111827;
       padding: 1rem;
       border-radius: 0.75rem;
       text-align: left;
-      border: 1px solid #334155;
+      border: 1px solid #1e293b;
       transition: 0.3s;
     }
+
     .project:hover {
-      border-color: #a78bfa;
+      border-color: #38bdf8;
       transform: scale(1.02);
     }
+
     .project h3 {
       color: #facc15;
     }
+
+    .skills-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    .skills-grid span {
+      background: #1e293b;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.9rem;
+      color: #f1f5f9;
+      border: 1px solid #334155;
+    }
+
     .gallery-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 1rem;
       margin-top: 1rem;
     }
-    .gallery-grid img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      border-radius: 0.75rem;
-      border: 1px solid #334155;
-      transition: transform 0.3s;
-    }
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Always 2 columns */
+  gap: 1rem;
+  margin-top: 1rem;
+  max-width: 600px;
+  margin-inline: auto; /* Center the grid */
+}
+.gallery-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.75rem;
+  border: 1px solid #334155;
+  transition: transform 0.3s;
+}
+
+
     .gallery-grid img:hover {
       transform: scale(1.03);
     }
+
+    .profile-pic {
+      margin-top: 2rem;
+    }
+
+    .profile-pic img {
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      border: 4px solid #1e293b;
+      object-fit: cover;
+    }
+
     footer {
       margin-top: 4rem;
       color: #64748b;
-    }
-    @keyframes pulse {
-      0%, 100% { opacity: 1; }
-      50% { opacity: 0.5; }
     }
   </style>
 </head>
 <body>
   <main>
     <header>
-      <h1>Akshit </h1>
+      <h1>Akshit Sharma</h1>
       <p>B.Tech CSE @ Graphic Era Hill University</p>
       <p>DSA • Full Stack • ML • DevOps</p>
       <div class="socials">
         <a href="mailto:akshitsharma02003@gmail.com">Email</a>
         <a href="tel:8868937446">Phone</a>
-        <a href="https://linkedin.com/in/akshit-sharma-7b398024a" target="_blank">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/akshit-7b398024a/" target="_blank">LinkedIn</a>
         <a href="https://github.com/" target="_blank">GitHub</a>
       </div>
     </header>
 
+    <div class="profile-pic">
+      <img src="Gallery/me5.jpg" alt="Akshit's Photo" />
+    </div>
+
     <section class="about">
       <h2>About Me</h2>
-      <p>I'm Akshit, a charismatic B.Tech CSE student passionate about building impactful projects and mastering the craft of software development. I thrive in challenges, love presenting ideas, and am deeply driven by learning DSA and building discipline through fitness.</p>
+      <p>
+        I'm Akshit, a charismatic B.Tech CSE student passionate about building impactful projects and mastering the craft of software development. I thrive in challenges, love presenting ideas, and am deeply driven by learning DSA and building discipline through fitness.
+      </p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <span>C++</span>
+        <span>Flex</span>
+        <span>Bison</span>
+        <span>DSA</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JavaScript</span>
+        <span>Python</span>
+        <span>React</span>
+        <span>Git</span>
+        <span>Linux</span>
+        <span>Docker</span>
+        <span>Kubernetes</span>
+      </div>
     </section>
 
     <section class="projects">

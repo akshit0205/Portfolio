@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Akshit Sharma | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #0f172a;
+      color: #f8fafc;
+      text-align: center;
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+      background: linear-gradient(to right, #a78bfa, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      animation: pulse 3s infinite;
+    }
+    header p {
+      color: #94a3b8;
+      margin-bottom: 0.5rem;
+    }
+    .socials {
+      margin-top: 1rem;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .socials a {
+      color: #cbd5e1;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border: 1px solid #334155;
+      border-radius: 999px;
+      transition: all 0.3s;
+    }
+    .socials a:hover {
+      background: #475569;
+    }
+    section {
+      margin-top: 3rem;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #64748b;
+      padding-bottom: 0.5rem;
+    }
+    .project-list {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .project {
+      background: #1e293b;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      text-align: left;
+      border: 1px solid #334155;
+      transition: 0.3s;
+    }
+    .project:hover {
+      border-color: #a78bfa;
+      transform: scale(1.02);
+    }
+    .project h3 {
+      color: #facc15;
+    }
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+    .gallery-grid img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 0.75rem;
+      border: 1px solid #334155;
+      transition: transform 0.3s;
+    }
+    .gallery-grid img:hover {
+      transform: scale(1.03);
+    }
+    footer {
+      margin-top: 4rem;
+      color: #64748b;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <h1>Akshit </h1>
+      <p>B.Tech CSE @ Graphic Era Hill University</p>
+      <p>DSA • Full Stack • ML • DevOps</p>
+      <div class="socials">
+        <a href="mailto:akshitsharma02003@gmail.com">Email</a>
+        <a href="tel:8868937446">Phone</a>
+        <a href="https://linkedin.com/in/akshit-sharma-7b398024a" target="_blank">LinkedIn</a>
+        <a href="https://github.com/" target="_blank">GitHub</a>
+      </div>
+    </header>
+
+    <section class="about">
+      <h2>About Me</h2>
+      <p>I'm Akshit, a charismatic B.Tech CSE student passionate about building impactful projects and mastering the craft of software development. I thrive in challenges, love presenting ideas, and am deeply driven by learning DSA and building discipline through fitness.</p>
+    </section>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="project-list">
+        <div class="project">
+          <h3>My Stream Line Chat</h3>
+          <p>TCP-based synchronous chat engine using multithreading.</p>
+          <p><strong>Tech:</strong> TCP, Multithreading, C++</p>
+        </div>
+        <div class="project">
+          <h3>Story-to-Flowchart Compiler</h3>
+          <p>Compiler that parses narrative into AST and renders as flowcharts.</p>
+          <p><strong>Tech:</strong> Flex, Bison, C</p>
+        </div>
+        <div class="project">
+          <h3>Studio Ghibli Image Generator</h3>
+          <p>AI-based style transfer project to generate Ghibli-style images.</p>
+          <p><strong>Tech:</strong> AI, Style Transfer, Python</p>
+        </div>
+        <div class="project">
+          <h3>DevOps on Cloud</h3>
+          <p>Cloud-based CI/CD pipelines with Docker & Kubernetes.</p>
+          <p><strong>Tech:</strong> Docker, Kubernetes, CI/CD</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2>Photos</h2>
+      <div class="gallery-grid">
+        <img src="/Gallery/me1 (1).jpg" alt="Event 1" />
+        <img src="/Gallery/me2.jpg" alt="Event 2" />
+        <img src="/Gallery/me3 (3).jpg" alt="Event 3" />
+        <img src="/Gallery/me4.jpg" alt="Event 4" />
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Akshit Sharma</p>
+    </footer>
+  </main>
+</body>
+</html>
